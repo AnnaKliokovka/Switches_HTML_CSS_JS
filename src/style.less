@@ -1,0 +1,62 @@
+body {
+    background-color: white;
+} 
+h1{
+    text-align: center;
+    font-style: initial;
+}
+div
+{
+    width:100%;
+    text-align: center;
+}
+//Переключатель ввиде сердечка
+
+.heart-btn {  
+  display: inline-block;
+    width: 64px; /* ширина переключателя */
+    height: 34px; /* высота переключателя */
+    border-radius: 30px; /* радиус скругления */
+    background: #DCDCDC; /* цвет фона */
+    z-index: 0;
+    margin: 0;
+    margin-right: 20px;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    transition-duration: 300ms;
+}
+
+.heart-btn::before,.heart-btn::after {
+  content: "";
+  position: absolute;
+  top: 4px;
+  width: 15px;
+  height: 25px;
+  border-radius: 50px 50px 0 0;
+  background: white;
+}
+
+.heart-btn::before {
+  left: 20px;
+  transform: rotate(-45deg);
+  transform-origin: 0 100%;
+}
+
+.heart-btn::after {
+  left: 5px;
+  transform: rotate(45deg);
+  transform-origin: 100% 100%;
+}
+
+.switch-on {
+    background: #DC143C;
+}
+
+.switch-on::after {
+    left: 28px;
+}
+.switch-on::before {
+    left: 43px;
+}
