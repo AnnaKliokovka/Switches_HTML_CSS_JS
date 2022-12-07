@@ -57,3 +57,51 @@ div {
 .switch-on::before {
   left: 43px;
 }
+.cat-btn {
+  display: inline-block;
+  width: 64px;
+  /* ширина переключателя */
+  height: 34px;
+  /* высота переключателя */
+  border-radius: 30px;
+  /* радиус скругления */
+  background: #DCDCDC;
+  /* цвет фона */
+  z-index: 0;
+  margin: 0;
+  margin-right: 20px;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  transition-duration: 300ms;
+}
+.cat-btn::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 8px;
+  border-width: 10px 12px 5px;
+  border-style: solid;
+  border-color: white white transparent;
+  transform: rotate(180deg);
+}
+.cat-btn::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 7.5px;
+  width: 26px;
+  height: 20px;
+  border-radius: 10px;
+  background: white;
+}
+.switch_cat-on {
+  background: #FF7F50;
+}
+.switch_cat-on::after {
+  left: 29px;
+}
+.switch_cat-on::before {
+  left: 28px;
+}
