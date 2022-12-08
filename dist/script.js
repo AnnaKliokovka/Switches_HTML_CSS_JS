@@ -24,3 +24,17 @@ function clicked_on_cat() {
         $(this).toggleClass('switch_cat-on');
     });
   }
+
+
+let letter = document.getElementById("letter");
+
+letter.addEventListener("click", async () => {
+    clicked_on_letter();
+});
+
+function clicked_on_letter() {
+    //Переключаем switcher
+    $('.letter-btn').click(function () {
+        $(this).toggleClass('switch_letter-on');
+    });
+  }

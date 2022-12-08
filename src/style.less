@@ -55,12 +55,12 @@ div
 }
 
 .switch-on::after {
-    left: 28px;
+    left: 29px;
 }
 .switch-on::before {
     left: 43px;
 }
-
+//Книпка в форме кота
 .cat-btn {  
   display: inline-block;
     width: 64px; /* ширина переключателя */
@@ -82,7 +82,7 @@ div
   content: "";
   position: absolute;
   top: 5px;
-  left: 8px;
+  left: 8.5px;
   border-width: 10px 12px 5px;
   border-style: solid;
   border-color: white white transparent;
@@ -109,4 +109,46 @@ border-radius: 10px/1px;
 }
 .switch_cat-on::before {
     left: 28px;
+}
+
+//Кнопка в форме звезды
+.letter-btn {  
+  display: inline-block;
+    width: 64px; /* ширина переключателя */
+    height: 34px; /* высота переключателя */
+    border-radius: 30px; /* радиус скругления */
+    background: #DCDCDC; /* цвет фона */
+    z-index: 0;
+    margin: 0;
+    margin-right: 20px;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    transition-duration: 300ms;
+}
+
+
+.letter-btn::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 8.5px;
+  border-width: 10px 12px 5px;
+  border-style: solid;
+  border-color: white transparent transparent;  
+ box-shadow: 1px 4px 3px 1px rgba(0, 0, 0, 0.5);
+}
+
+.switch_letter-on {
+    background: #FFD700;
+}
+
+.switch_letter-on::after {
+    left: 27px;
+  
+}
+.switch_letter-on::before {
+    left: 28px;
+  border-color: #FFF8DC  #FFD700  #FFD700;  
 }
