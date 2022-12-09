@@ -9,16 +9,14 @@ div {
   width: 100%;
   text-align: center;
 }
-.heart-btn {
+.botton-btn {
   display: inline-block;
-  width: 64px;
+  width: 68px;
   /* ширина переключателя */
   height: 34px;
   /* высота переключателя */
   border-radius: 30px;
   /* радиус скругления */
-  background: #DCDCDC;
-  /* цвет фона */
   z-index: 0;
   margin: 0;
   margin-right: 20px;
@@ -27,6 +25,26 @@ div {
   cursor: pointer;
   position: relative;
   transition-duration: 300ms;
+}
+.red-btn {
+  background: red;
+  /* цвет фона */
+}
+.orange-btn {
+  background: orange;
+  /* цвет фона */
+}
+.yellow-btn {
+  background: #FFD700;
+  /* цвет фона */
+}
+.switch-btn-off {
+  background: #DCDCDC;
+  /* цвет фона */
+}
+.heart-btn {
+  position: relative;
+  cursor: pointer;
 }
 .heart-btn::before,
 .heart-btn::after {
@@ -39,48 +57,30 @@ div {
   background: white;
 }
 .heart-btn::before {
-  left: 20px;
+  left: 45px;
   transform: rotate(-45deg);
   transform-origin: 0 100%;
 }
 .heart-btn::after {
-  left: 5px;
+  left: 30px;
   transform: rotate(45deg);
   transform-origin: 100% 100%;
 }
-.switch-on {
-  background: #DC143C;
+.switch-heart-off::after {
+  left: 10px;
 }
-.switch-on::after {
-  left: 29px;
-}
-.switch-on::before {
-  left: 43px;
+.switch-heart-off::before {
+  left: 25px;
 }
 .cat-btn {
-  display: inline-block;
-  width: 64px;
-  /* ширина переключателя */
-  height: 34px;
-  /* высота переключателя */
-  border-radius: 30px;
-  /* радиус скругления */
-  background: #DCDCDC;
-  /* цвет фона */
-  z-index: 0;
-  margin: 0;
-  margin-right: 20px;
-  padding: 0;
-  border: none;
-  cursor: pointer;
   position: relative;
-  transition-duration: 300ms;
+  cursor: pointer;
 }
 .cat-btn::after {
   content: "";
   position: absolute;
   top: 5px;
-  left: 8.5px;
+  left: 36px;
   border-width: 10px 12px 5px;
   border-style: solid;
   border-color: white white transparent;
@@ -90,36 +90,19 @@ div {
   content: "";
   position: absolute;
   top: 8px;
-  left: 7.5px;
+  left: 35px;
   width: 26px;
   height: 20px;
   border-radius: 10px;
   background: white;
 }
-.switch_cat-on {
-  background: #FF7F50;
+.switch-cat-off::after {
+  left: 11px;
 }
-.switch_cat-on::after {
-  left: 29px;
-}
-.switch_cat-on::before {
-  left: 28px;
+.switch-cat-off::before {
+  left: 10px;
 }
 .letter-btn {
-  display: inline-block;
-  width: 64px;
-  /* ширина переключателя */
-  height: 34px;
-  /* высота переключателя */
-  border-radius: 30px;
-  /* радиус скругления */
-  background: #DCDCDC;
-  /* цвет фона */
-  z-index: 0;
-  margin: 0;
-  margin-right: 20px;
-  padding: 0;
-  border: none;
   cursor: pointer;
   position: relative;
   transition-duration: 300ms;
@@ -128,19 +111,13 @@ div {
   content: "";
   position: absolute;
   top: 8px;
-  left: 8.5px;
+  left: 35px;
   border-width: 10px 12px 5px;
   border-style: solid;
-  border-color: white transparent transparent;
+  border-color: #FFF8DC #FFD700 #FFD700;
   box-shadow: 1px 4px 3px 1px rgba(0, 0, 0, 0.5);
 }
-.switch_letter-on {
-  background: #FFD700;
-}
-.switch_letter-on::after {
-  left: 27px;
-}
-.switch_letter-on::before {
-  left: 28px;
-  border-color: #FFF8DC #FFD700 #FFD700;
+.switch-letter-off::before {
+  left: 10px;
+  border-color: white transparent  transparent;
 }

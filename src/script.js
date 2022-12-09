@@ -1,40 +1,21 @@
-let heart = document.getElementById("heart");
+let b = document.getElementById("btn");
 
-heart.addEventListener("click", async () => {
+b.addEventListener("click", async () => {
     clicked_on_heart();
 });
 
 function clicked_on_heart() {
     //Переключаем switcher
-    $('.heart-btn').click(function () {
-        $(this).toggleClass('switch-on');
+    $('.botton-btn').click(function () {
+        $(this).toggleClass('switch-btn-off');
     });
-  }
-
-
-let cat = document.getElementById("cat");
-
-cat.addEventListener("click", async () => {
-    clicked_on_cat();
-});
-
-function clicked_on_cat() {
-    //Переключаем switcher
-    $('.cat-btn').click(function () {
-        $(this).toggleClass('switch_cat-on');
+   $('.heart-btn').click(function () {
+        $(this).toggleClass('switch-heart-off');
     });
-  }
-
-
-let letter = document.getElementById("letter");
-
-letter.addEventListener("click", async () => {
-    clicked_on_letter();
-});
-
-function clicked_on_letter() {
-    //Переключаем switcher
-    $('.letter-btn').click(function () {
-        $(this).toggleClass('switch_letter-on');
+   $('.cat-btn').click(function () {
+        $(this).toggleClass('switch-cat-off');
+    });
+  $('.letter-btn').click(function () {
+        $(this).toggleClass('switch-letter-off');
     });
   }
